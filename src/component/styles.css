@@ -1,0 +1,137 @@
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  .nft{
+  
+    user-select:none;
+    position: relative; 
+    
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(174, 194, 225, 0.412) 0%, rgba(224, 255, 250, 0.5) 100%);
+   
+   
+    background-color: rgba(40, 44, 52, 0.4); /* Increased transparency */
+    background: linear-gradient(0deg, rgba(174, 194, 225, 0.2) 0%, rgba(224, 255, 250, 0.3) 100%);
+    backdrop-filter: blur(5px); /* Adds a blur effect for a frosted glass look */
+    overflow: hidden;
+    transition: .5s all;
+    background-color: #282c34;
+  background: linear-gradient(0deg, rgba(40,44,52,1) 0%, rgba(17,0,32,.5) 100%);
+  
+  background-color: #282c34;
+  background: linear-gradient(0deg, rgba(40,44,52,1) 0%, rgba(17,0,32,.5) 100%);
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: .7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+    .main{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem;
+      .tokenImage{
+      
+        max-width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+      .description{
+        margin: .5rem 0;
+      
+      }
+      .tokenInfo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .price{
+          display: flex;
+          align-items: center;
+          color: #000000;
+          font-weight: 700;
+          ins{
+            margin-left: -.3rem;
+            margin-right: .5rem;
+          }
+        }
+        .duration{
+          display: flex;
+          align-items: center;
+          color: #a89ec9;
+          margin-right: .2rem;
+          ins{
+            margin: .5rem;
+            margin-bottom: .4rem;
+          }
+        }
+      }
+      .creator{
+        display: flex;
+        align-items: center;
+        margin-top: .2rem;
+        margin-bottom: -.3rem;
+        ins{
+          color: #a89ec9;
+          text-decoration: none;
+        }
+        .wrapper{
+          display: flex;
+          align-items: center;
+          border: 1px solid #ffffff22;
+          padding: .3rem;
+          margin: 0;
+          margin-right: .5rem;
+          border-radius: 100%;
+          box-shadow: inset 0 0 0 4px #000000aa;
+          img{
+            border-radius: 100%;
+            border: 1px solid #ffffff22;
+            width: 2rem;
+            height: 2rem;
+            object-fit: cover;
+            margin: 0;
+          }
+        }
+      }
+    }
+    ::before{
+      position: fixed;
+      content: "";
+      box-shadow: 0 0 100px 40px #ffffff08;
+      top: -10%;
+      left: -100%;
+      transform: rotate(-45deg);
+      height: 60rem;
+      transition: .7s all;
+    }
+    &:hover{
+      border: 1px solid #ffffff44;
+      box-shadow: 0 2px 5px 2px #00000074;
+      transform: scale(1.015);
+      filter: brightness(1.3);
+      ::before{
+        filter: brightness(.5);
+        top: -100%;
+        left: 200%;
+      }
+    }
+  }
+  
+  .logo-background {
+   
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width:100px;
+    height: 80px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Viaplay_logo.png/320px-Viaplay_logo.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.3;
+    filter: blur(3px);
+    z-index: 0; /* Set it above the background but below the content */
+    pointer-events: none; /* Ensures it doesn’t interfere with interactions */
+  }
+  
