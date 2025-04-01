@@ -4,7 +4,7 @@ import "./styles.css";
 const Card = () => {
   return (
  
-      <div className="nft w-full h-[400px] rounded-3xl">
+      <div className="nft mt-20 w-full h-[400px] rounded-3xl">
         <div className="main cursor-pointer">
           <Image
             className="tokenImage w-full rounded-3xl"
