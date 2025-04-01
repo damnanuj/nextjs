@@ -13,7 +13,7 @@ export default function Header({ showInput }: { showInput: boolean }) {
       <motion.input
         placeholder="Where to?"
         type="text"
-        className="text-black w-[35%] rounded-xl bg-white px-4 py-3"
+        className="text-black w-[35%] rounded-xl hidden lg:block bg-white px-4 py-3"
         initial={{ opacity: 0, y: 20 }} // Start hidden and below position
         animate={{ opacity: showInput ? 1 : 0, y: showInput ? 0 : 20 }}
         transition={{ duration: 0.25, ease: "easeOut", delay: 0.1 }}
